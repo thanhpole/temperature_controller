@@ -15,10 +15,10 @@
 
 #define freq 2000
 
-#define MQTT_SERVER "13.208.186.122"
+#define MQTT_SERVER "Your MQTT server IP"
 #define MQTT_PORT 1883
-#define MQTT_USER "mqtt"
-#define MQTT_PASSWORD "86868686"
+#define MQTT_USER "mqtt_user"
+#define MQTT_PASSWORD "mqtt_password"
 #define MQTT_CURRENT_TEMP_TOPIC "CurrentTemp"
 #define MQTT_ACTION_TOPIC "action"
 #define MQTT_SET_TEMP_TOPIC "SetTemp"

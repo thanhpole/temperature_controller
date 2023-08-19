@@ -1,7 +1,7 @@
 #include "main.h"
 
-const char *ssid = "PoPo 1";
-const char *password = "supim0404";
+const char *ssid = "******";
+const char *password = "*********";
 float temp = 0, last_temp = 0;
 double Setpoint = 0, Input, Output, fan_Output, fan_Input;
 state STATE;
@@ -45,26 +45,6 @@ void setup()
   analogWriteFreq(freq);
   analogWriteResolution(10);
   temp = sensors.getTempCByIndex(0);
-  // ledcAttachPin(lamp, lampChannel);
-  // ledcAttachPin(fan, fanChannel);
-  // createTempQueue();
-  // pinMode(ledPin, OUTPUT);
-  // tmr1_h = xTimerCreate(
-  //     "TMR1",
-  //     1000 / portTICK_PERIOD_MS,
-  //     pdTRUE,
-  //     NULL,
-  //     get_temp_task);
-  // if (tmr1_h == NULL)
-  // {
-  //   Serial.println("Could not create timer");
-  // }
-  // else
-  // xTimerStart(tmr1_h, portMAX_DELAY);
-  // xTaskCreate(&calculate_PWM, "PWM", 4096, NULL, 10, NULL);
-  // xTaskCreate(&get_temp_task, "temp", 4096, NULL, 11, NULL);
-  // xTaskCreate(&fan_PWM, "FAN", 4096, NULL, 9, NULL);
-  // xTaskCreate(&mqtt_task, "mqtt", 4096, NULL, 8, NULL);
 }
 
 void loop()
